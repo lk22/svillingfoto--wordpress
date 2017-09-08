@@ -1,0 +1,24 @@
+.trans-footer{
+	width: 104%;
+	height:0px;
+	
+	.overlay{
+		background: #000;
+		opacity: 0.8;
+		height:45px;
+		
+		.company{
+			line-height: 25px;
+			
+			.facebook-link {
+				color: #3b5998;
+			}
+
+			.instagram-link {
+				background: -webkit-linear-gradient(left, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	}
+}

@@ -1,0 +1,82 @@
+.gallery, .Bryllup-gallery, .Portrætter-gallery, .Reklame-gallery, .Konfirmationer-gallery{
+	min-height:600px;
+	width: 80%;
+	padding: 1rem;
+	
+	.gallery__title{
+		margin-top:4rem;
+		font-family: 'Raleway', sans-serif;
+	}
+
+	.gallery-nav{
+		min-height:50px;
+		margin-left: -10px;
+		.menu-galleries-container{
+			.menu {
+				padding-top:2rem;
+				padding-left:0rem;
+				.menu-item {
+					display:inline;
+					margin-left: 1rem;
+					@media screen and(max-width: 400px) {
+						display:block;
+						margin-top: 3rem;
+					}
+
+					@media screen and (min-width: 401px) and (max-width: 533px) {
+						display:block;
+						margin-top: 3rem;
+					}
+					a {
+						font-family: 'Raleway', sans-serif;
+						color: #000;
+						text-decoration: none;
+						padding:1rem;
+						border: 1.5px solid #000;
+						
+						&:hover{
+							color:#fff;
+							background: #000;
+							transition:ease-in-out 0.2s all;
+						}
+
+						&:not(:hover) {
+							transition:ease-in-out 0.2s all;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.gallery-wrapper{
+		border-top:1.5px;
+		min-height: 400px;
+		width: 100%;
+		padding: 0px;
+		
+		.gallery-wrapper__image{
+			display:inline;
+			justify-content:center;
+			margin-top:2rem;
+			margin-left: 4rem;
+			a {
+				img{
+					display:inline;
+					@media screen and (max-width: 400px) {
+						height: 250px;
+						width: 250px;
+					}
+
+					@media screen and (min-width: 401px) and (max-width: 600px) {
+						height: 200px;
+						width: 200px;
+					}
+				}
+				.caption{
+					font-family: 'Raleway', sans-serif;
+				}
+			}
+		}
+	}
+}

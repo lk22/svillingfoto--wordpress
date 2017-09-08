@@ -1,0 +1,130 @@
+#home_contact{
+	background: #eee;
+	height: 100%;
+	width: 100%;
+	padding: 2rem;
+	color: #000;
+	font-family: 'Raleway', sans-serif;
+
+	.home-contact__form-section{
+		margin: 0 auto;
+		width: 50%;
+		margin-top:2rem;
+		
+		@media screen and (max-width: 400px) {
+			width: 100%;
+		}
+
+		@media screen and (min-width: 401px) and (max-width: 600px) {
+			width:66%;
+		}
+
+		@media screen and (min-width: 601px) and (max-width: 991px) {
+			width: 66%;
+		}
+		.wpcf7{
+			.wpcf7-form{
+
+				p{
+					label{
+						.your-firstname, .your-name, .your-subject, .your-email, .Phone-number, .your-message{
+							.wpcf7-form-control{
+								border:#eee;
+								height: 40px;
+								padding-left: 5rem;
+								padding-right:5rem;
+								border: 1.5px solid;
+								width:164%;
+								
+								@media screen and(max-width: 400px) {
+									width:100%;
+									padding-left:1rem;
+									padding-right:1rem;
+
+								}
+
+								@media screen and(min-width: 401px) and(max-width: 600px) {
+									width: 100%;
+									padding-left:1rem;
+									padding-right:1rem;
+
+								}
+
+								@media screen and(min-width: 601px) and (max-width: 991px) {
+									width: 130%;
+								}
+								
+								&:hover{
+									border-color: #1abc9c;
+									
+									-moz-transition:ease-in-out 0.2s all;
+									-o-transition:ease-in-out 0.2s all;
+									-ms-transition: ease-in-out 0.2s all;
+									transition: ease-in-out 0.2s all;
+								}
+
+								&:focus{
+									transform: scale(1.02);
+								}
+
+								&:not(:hover) {
+									-moz-transition:ease-in-out 0.2s all;
+									-o-transition:ease-in-out 0.2s all;
+									-ms-transition: ease-in-out 0.2s all;
+									transition: ease-in-out 0.2s all;
+								}
+							}
+
+							.wpcf7-textarea{
+								min-height:200px;
+								padding:3rem;
+								width: 178%;
+								
+								@media screen and(max-width: 400px) {
+									width:100%;
+									padding:1.5rem;
+								}
+
+								@media screen and(min-width: 401px) and(max-width: 600px) {
+									width: 100%;
+									padding:1.5rem;
+								}
+
+								@media screen and(min-width: 601px) and (max-width: 991px) {
+									width: 140%;
+								}
+							}
+						}
+					}
+					.wpcf7-submit{
+						padding:1.5rem;
+						background: #3498db;
+						color: #fff;
+						border: 1px solid;
+						width: 100%;
+						
+						@media screen and(min-width: 601px) and (max-width: 991px) {
+							width: 120%;
+						}
+						
+						&:hover{
+							background: #2ecc71;
+							
+							-moz-transition:ease-in-out 0.2s all;
+							-o-transition:ease-in-out 0.2s all;
+							-ms-transition: ease-in-out 0.2s all;
+							transition: ease-in-out 0.2s all;
+						}
+
+						&:not(:hover){
+							-moz-transition:ease-in-out 0.2s all;
+							-o-transition:ease-in-out 0.2s all;
+							-ms-transition: ease-in-out 0.2s all;
+							transition: ease-in-out 0.2s all;
+						}
+					}
+				}
+			}
+		}
+	}
+}

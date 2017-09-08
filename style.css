@@ -1,0 +1,530 @@
+@charset "UTF-8";
+/**
+ * Theme Name: SvillingFoto.dk
+ * Author: KnudsenDesign & Udvikling
+ * Author URI:
+ * Version: 1.0
+ */
+/**
+ * fonts
+ */
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+.sf-header {
+  height: 70px;
+  width: 100%;
+  padding: 0px;
+  background: #000;
+  color: #fff;
+}
+
+.sf-header .sf-header__logo {
+  margin-top: 0px;
+}
+
+.sf-header .sf-header__nav .menu-menu-1-container .menu {
+  padding-top: 2rem;
+}
+
+.sf-header .sf-header__nav .menu-menu-1-container .menu .menu-item {
+  display: inline;
+  margin-left: 1rem;
+}
+
+.sf-header .sf-header__nav .menu-menu-1-container .menu .menu-item a {
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+.sf-header .sf-mobile-nav {
+  padding-top: 2rem;
+  padding-right: 1rem;
+}
+
+.sf-header .sf-mobile-nav .mobile-menu-btn {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  height: 800px;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  position: fixed;
+  top: 100px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: none;
+  z-index: 9999;
+}
+
+.mobile-menu .menu-menu-1-container .menu {
+  width: 50%;
+}
+
+.mobile-menu .menu-menu-1-container .menu .menu-item {
+  list-style-type: none;
+  display: block;
+  margin-top: 2rem;
+  border-bottom: 1.5px solid #fff;
+  border-width: 50%;
+}
+
+.mobile-menu .menu-menu-1-container .menu .menu-item:hover {
+  border-color: #3498db;
+  transition: ease-in-out 0.2s all;
+}
+
+.mobile-menu .menu-menu-1-container .menu .menu-item:not(:hover) {
+  transition: ease-in-out 0.2s all;
+}
+
+.mobile-menu .menu-menu-1-container .menu .menu-item a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.home {
+  min-height: 580px;
+  width: 100%;
+  background-image: url(http://svillingfoto.dev/wp-content/uploads/2017/08/layered_cover.jpg);
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+}
+
+.home .headline {
+  font-size: 76px;
+  margin-top: 2rem;
+}
+
+.home .tagline {
+  font-size: 42.2px;
+  margin-top: 2rem;
+}
+
+.home .contact-me {
+  margin-top: 100px;
+}
+
+.gallery, .Bryllup-gallery, .Portrætter-gallery, .Reklame-gallery, .Konfirmationer-gallery {
+  min-height: 600px;
+  width: 80%;
+  padding: 1rem;
+}
+
+.gallery .gallery__title, .Bryllup-gallery .gallery__title, .Portrætter-gallery .gallery__title, .Reklame-gallery .gallery__title, .Konfirmationer-gallery .gallery__title {
+  margin-top: 4rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.gallery .gallery-nav, .Bryllup-gallery .gallery-nav, .Portrætter-gallery .gallery-nav, .Reklame-gallery .gallery-nav, .Konfirmationer-gallery .gallery-nav {
+  min-height: 50px;
+  margin-left: -10px;
+}
+
+.gallery .gallery-nav .menu-galleries-container .menu, .Bryllup-gallery .gallery-nav .menu-galleries-container .menu, .Portrætter-gallery .gallery-nav .menu-galleries-container .menu, .Reklame-gallery .gallery-nav .menu-galleries-container .menu, .Konfirmationer-gallery .gallery-nav .menu-galleries-container .menu {
+  padding-top: 2rem;
+  padding-left: 0rem;
+}
+
+.gallery .gallery-nav .menu-galleries-container .menu .menu-item, .Bryllup-gallery .gallery-nav .menu-galleries-container .menu .menu-item, .Portrætter-gallery .gallery-nav .menu-galleries-container .menu .menu-item, .Reklame-gallery .gallery-nav .menu-galleries-container .menu .menu-item, .Konfirmationer-gallery .gallery-nav .menu-galleries-container .menu .menu-item {
+  display: inline;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 400px) {
+  .gallery .gallery-nav .menu-galleries-container .menu .menu-item, .Bryllup-gallery .gallery-nav .menu-galleries-container .menu .menu-item, .Portrætter-gallery .gallery-nav .menu-galleries-container .menu .menu-item, .Reklame-gallery .gallery-nav .menu-galleries-container .menu .menu-item, .Konfirmationer-gallery .gallery-nav .menu-galleries-container .menu .menu-item {
+    display: block;
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 533px) {
+  .gallery .gallery-nav .menu-galleries-container .menu .menu-item, .Bryllup-gallery .gallery-nav .menu-galleries-container .menu .menu-item, .Portrætter-gallery .gallery-nav .menu-galleries-container .menu .menu-item, .Reklame-gallery .gallery-nav .menu-galleries-container .menu .menu-item, .Konfirmationer-gallery .gallery-nav .menu-galleries-container .menu .menu-item {
+    display: block;
+    margin-top: 3rem;
+  }
+}
+
+.gallery .gallery-nav .menu-galleries-container .menu .menu-item a, .Bryllup-gallery .gallery-nav .menu-galleries-container .menu .menu-item a, .Portrætter-gallery .gallery-nav .menu-galleries-container .menu .menu-item a, .Reklame-gallery .gallery-nav .menu-galleries-container .menu .menu-item a, .Konfirmationer-gallery .gallery-nav .menu-galleries-container .menu .menu-item a {
+  font-family: 'Raleway', sans-serif;
+  color: #000;
+  text-decoration: none;
+  padding: 1rem;
+  border: 1.5px solid #000;
+}
+
+.gallery .gallery-nav .menu-galleries-container .menu .menu-item a:hover, .Bryllup-gallery .gallery-nav .menu-galleries-container .menu .menu-item a:hover, .Portrætter-gallery .gallery-nav .menu-galleries-container .menu .menu-item a:hover, .Reklame-gallery .gallery-nav .menu-galleries-container .menu .menu-item a:hover, .Konfirmationer-gallery .gallery-nav .menu-galleries-container .menu .menu-item a:hover {
+  color: #fff;
+  background: #000;
+  transition: ease-in-out 0.2s all;
+}
+
+.gallery .gallery-nav .menu-galleries-container .menu .menu-item a:not(:hover), .Bryllup-gallery .gallery-nav .menu-galleries-container .menu .menu-item a:not(:hover), .Portrætter-gallery .gallery-nav .menu-galleries-container .menu .menu-item a:not(:hover), .Reklame-gallery .gallery-nav .menu-galleries-container .menu .menu-item a:not(:hover), .Konfirmationer-gallery .gallery-nav .menu-galleries-container .menu .menu-item a:not(:hover) {
+  transition: ease-in-out 0.2s all;
+}
+
+.gallery .gallery-wrapper, .Bryllup-gallery .gallery-wrapper, .Portrætter-gallery .gallery-wrapper, .Reklame-gallery .gallery-wrapper, .Konfirmationer-gallery .gallery-wrapper {
+  border-top: 1.5px;
+  min-height: 400px;
+  width: 100%;
+  padding: 0px;
+}
+
+.gallery .gallery-wrapper .gallery-wrapper__image, .Bryllup-gallery .gallery-wrapper .gallery-wrapper__image, .Portrætter-gallery .gallery-wrapper .gallery-wrapper__image, .Reklame-gallery .gallery-wrapper .gallery-wrapper__image, .Konfirmationer-gallery .gallery-wrapper .gallery-wrapper__image {
+  display: inline;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+.gallery .gallery-wrapper .gallery-wrapper__image a img, .Bryllup-gallery .gallery-wrapper .gallery-wrapper__image a img, .Portrætter-gallery .gallery-wrapper .gallery-wrapper__image a img, .Reklame-gallery .gallery-wrapper .gallery-wrapper__image a img, .Konfirmationer-gallery .gallery-wrapper .gallery-wrapper__image a img {
+  display: inline;
+}
+
+@media screen and (max-width: 400px) {
+  .gallery .gallery-wrapper .gallery-wrapper__image a img, .Bryllup-gallery .gallery-wrapper .gallery-wrapper__image a img, .Portrætter-gallery .gallery-wrapper .gallery-wrapper__image a img, .Reklame-gallery .gallery-wrapper .gallery-wrapper__image a img, .Konfirmationer-gallery .gallery-wrapper .gallery-wrapper__image a img {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .gallery .gallery-wrapper .gallery-wrapper__image a img, .Bryllup-gallery .gallery-wrapper .gallery-wrapper__image a img, .Portrætter-gallery .gallery-wrapper .gallery-wrapper__image a img, .Reklame-gallery .gallery-wrapper .gallery-wrapper__image a img, .Konfirmationer-gallery .gallery-wrapper .gallery-wrapper__image a img {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.gallery .gallery-wrapper .gallery-wrapper__image a .caption, .Bryllup-gallery .gallery-wrapper .gallery-wrapper__image a .caption, .Portrætter-gallery .gallery-wrapper .gallery-wrapper__image a .caption, .Reklame-gallery .gallery-wrapper .gallery-wrapper__image a .caption, .Konfirmationer-gallery .gallery-wrapper .gallery-wrapper__image a .caption {
+  font-family: 'Raleway', sans-serif;
+}
+
+.Kontakt {
+  width: 80%;
+  font-family: 'Raleway', sans-serif;
+}
+
+.Kontakt .Kontakt-wrapper {
+  min-height: 400px;
+  width: 100%;
+  padding: 0px;
+}
+
+.Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form {
+  padding: 10px;
+}
+
+.Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-firstname .wpcf7-form-control, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-name .wpcf7-form-control, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-email .wpcf7-form-control, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .Phone-number .wpcf7-form-control, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-subject .wpcf7-form-control, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-message .wpcf7-form-control {
+  border: #eee;
+  height: 40px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border: 1.5px solid;
+}
+
+@media screen and (max-width: 400px) {
+  .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-firstname .wpcf7-form-control, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-name .wpcf7-form-control, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-email .wpcf7-form-control, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .Phone-number .wpcf7-form-control, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-subject .wpcf7-form-control, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-message .wpcf7-form-control {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-firstname .wpcf7-form-control, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-name .wpcf7-form-control, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-email .wpcf7-form-control, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .Phone-number .wpcf7-form-control, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-subject .wpcf7-form-control, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-message .wpcf7-form-control {
+    width: 107%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 991px) {
+  .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-firstname .wpcf7-form-control, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-name .wpcf7-form-control, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-email .wpcf7-form-control, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .Phone-number .wpcf7-form-control, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-subject .wpcf7-form-control, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-message .wpcf7-form-control {
+    width: 130%;
+  }
+}
+
+.Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-firstname .wpcf7-form-control:hover, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-name .wpcf7-form-control:hover, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-email .wpcf7-form-control:hover, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .Phone-number .wpcf7-form-control:hover, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-subject .wpcf7-form-control:hover, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-message .wpcf7-form-control:hover {
+  border-color: #1abc9c;
+  transition: ease-in-out 0.2s all;
+}
+
+.Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-firstname .wpcf7-form-control:focus, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-name .wpcf7-form-control:focus, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-email .wpcf7-form-control:focus, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .Phone-number .wpcf7-form-control:focus, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-subject .wpcf7-form-control:focus, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-message .wpcf7-form-control:focus {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+.Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-firstname .wpcf7-form-control:not(:hover), .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-name .wpcf7-form-control:not(:hover), .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-email .wpcf7-form-control:not(:hover), .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .Phone-number .wpcf7-form-control:not(:hover), .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-subject .wpcf7-form-control:not(:hover), .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-message .wpcf7-form-control:not(:hover) {
+  transition: ease-in-out 0.2s all;
+}
+
+.Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-firstname .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-name .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-email .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .Phone-number .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-subject .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-message .wpcf7-textarea {
+  min-height: 200px;
+  padding: 3rem;
+  width: 109%;
+}
+
+@media screen and (max-width: 400px) {
+  .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-firstname .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-name .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-email .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .Phone-number .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-subject .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-message .wpcf7-textarea {
+    width: 100%;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-firstname .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-name .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-email .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .Phone-number .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-subject .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-message .wpcf7-textarea {
+    width: 107%;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 464px) and (max-width: 600px) {
+  .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-firstname .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-name .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-email .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .Phone-number .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-subject .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-message .wpcf7-textarea {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 991px) {
+  .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-firstname .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-name .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-email .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .Phone-number .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-subject .wpcf7-textarea, .Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p label .your-message .wpcf7-textarea {
+    width: 140%;
+  }
+}
+
+.Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p .wpcf7-submit {
+  padding: 1.5rem;
+  background: #3498db;
+  color: #fff;
+  border: 1px solid;
+  width: 100%;
+}
+
+.Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p .wpcf7-submit:hover {
+  background: #2ecc71;
+  transition: ease-in-out 0.2s all;
+}
+
+.Kontakt .Kontakt-wrapper .panel-layout .panel-grid .contact-wrapper .panel-grid-cell .widget .contact-form .so-widget-sow-editor .textwidget .wpcf7 .wpcf7-form p .wpcf7-submit:not(:hover) {
+  transition: ease-in-out 0.2s all;
+}
+
+.trans-footer {
+  width: 104%;
+  height: 0px;
+}
+
+.trans-footer .overlay {
+  background: #000;
+  opacity: 0.8;
+  height: 45px;
+}
+
+.trans-footer .overlay .company {
+  line-height: 25px;
+}
+
+.trans-footer .overlay .company .facebook-link {
+  color: #3b5998;
+}
+
+.trans-footer .overlay .company .instagram-link {
+  background: -webkit-linear-gradient(left, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer {
+  background: #000;
+  min-height: 45px;
+  color: #fff;
+}
+
+.footer .overlay .company {
+  line-height: 25px;
+}
+
+.footer .overlay .company .facebook-link {
+  color: #3b5998;
+}
+
+.footer .overlay .company .instagram-link {
+  background: -webkit-linear-gradient(left, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#gallery {
+  background: #fff;
+  color: #000;
+  width: 104%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#gallery #gallery__wrapper {
+  padding: 3rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#gallery #gallery__wrapper .gallery-image__item {
+  padding: 1rem;
+}
+
+#gallery #gallery__wrapper .gallery-image__item .gallery-image-item__overlay {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background: #000;
+  color: #fff;
+}
+
+#gallery #gallery__wrapper .gallery-image__item:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: ease-in-out 0.2s all;
+}
+
+#gallery #gallery__wrapper .gallery-image__item:not(:hover) {
+  transition: ease-in-out 0.2s all;
+}
+
+#home_contact {
+  background: #eee;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+}
+
+#home_contact .home-contact__form-section {
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 400px) {
+  #home_contact .home-contact__form-section {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  #home_contact .home-contact__form-section {
+    width: 66%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 991px) {
+  #home_contact .home-contact__form-section {
+    width: 66%;
+  }
+}
+
+#home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-firstname .wpcf7-form-control, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-name .wpcf7-form-control, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-subject .wpcf7-form-control, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-email .wpcf7-form-control, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .Phone-number .wpcf7-form-control, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-message .wpcf7-form-control {
+  border: #eee;
+  height: 40px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border: 1.5px solid;
+  width: 164%;
+}
+
+@media screen and (max-width: 400px) {
+  #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-firstname .wpcf7-form-control, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-name .wpcf7-form-control, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-subject .wpcf7-form-control, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-email .wpcf7-form-control, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .Phone-number .wpcf7-form-control, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-message .wpcf7-form-control {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-firstname .wpcf7-form-control, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-name .wpcf7-form-control, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-subject .wpcf7-form-control, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-email .wpcf7-form-control, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .Phone-number .wpcf7-form-control, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-message .wpcf7-form-control {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 991px) {
+  #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-firstname .wpcf7-form-control, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-name .wpcf7-form-control, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-subject .wpcf7-form-control, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-email .wpcf7-form-control, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .Phone-number .wpcf7-form-control, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-message .wpcf7-form-control {
+    width: 130%;
+  }
+}
+
+#home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-firstname .wpcf7-form-control:hover, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-name .wpcf7-form-control:hover, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-subject .wpcf7-form-control:hover, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-email .wpcf7-form-control:hover, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .Phone-number .wpcf7-form-control:hover, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-message .wpcf7-form-control:hover {
+  border-color: #1abc9c;
+  transition: ease-in-out 0.2s all;
+}
+
+#home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-firstname .wpcf7-form-control:focus, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-name .wpcf7-form-control:focus, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-subject .wpcf7-form-control:focus, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-email .wpcf7-form-control:focus, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .Phone-number .wpcf7-form-control:focus, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-message .wpcf7-form-control:focus {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+#home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-firstname .wpcf7-form-control:not(:hover), #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-name .wpcf7-form-control:not(:hover), #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-subject .wpcf7-form-control:not(:hover), #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-email .wpcf7-form-control:not(:hover), #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .Phone-number .wpcf7-form-control:not(:hover), #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-message .wpcf7-form-control:not(:hover) {
+  transition: ease-in-out 0.2s all;
+}
+
+#home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-firstname .wpcf7-textarea, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-name .wpcf7-textarea, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-subject .wpcf7-textarea, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-email .wpcf7-textarea, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .Phone-number .wpcf7-textarea, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-message .wpcf7-textarea {
+  min-height: 200px;
+  padding: 3rem;
+  width: 178%;
+}
+
+@media screen and (max-width: 400px) {
+  #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-firstname .wpcf7-textarea, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-name .wpcf7-textarea, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-subject .wpcf7-textarea, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-email .wpcf7-textarea, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .Phone-number .wpcf7-textarea, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-message .wpcf7-textarea {
+    width: 100%;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-firstname .wpcf7-textarea, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-name .wpcf7-textarea, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-subject .wpcf7-textarea, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-email .wpcf7-textarea, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .Phone-number .wpcf7-textarea, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-message .wpcf7-textarea {
+    width: 100%;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 991px) {
+  #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-firstname .wpcf7-textarea, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-name .wpcf7-textarea, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-subject .wpcf7-textarea, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-email .wpcf7-textarea, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .Phone-number .wpcf7-textarea, #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p label .your-message .wpcf7-textarea {
+    width: 140%;
+  }
+}
+
+#home_contact .home-contact__form-section .wpcf7 .wpcf7-form p .wpcf7-submit {
+  padding: 1.5rem;
+  background: #3498db;
+  color: #fff;
+  border: 1px solid;
+  width: 100%;
+}
+
+@media screen and (min-width: 601px) and (max-width: 991px) {
+  #home_contact .home-contact__form-section .wpcf7 .wpcf7-form p .wpcf7-submit {
+    width: 120%;
+  }
+}
+
+#home_contact .home-contact__form-section .wpcf7 .wpcf7-form p .wpcf7-submit:hover {
+  background: #2ecc71;
+  transition: ease-in-out 0.2s all;
+}
+
+#home_contact .home-contact__form-section .wpcf7 .wpcf7-form p .wpcf7-submit:not(:hover) {
+  transition: ease-in-out 0.2s all;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */
